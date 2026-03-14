@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Super Google AI Assistant</title>
+  <meta name="description" content="Privacy Policy for Super Google AI Assistant Chrome Extension">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f1a;
+      --surface: #1a1a2e;
+      --border: #2a2a4a;
+      --text: #e0e0f0;
+      --text-muted: #8888aa;
+      --accent: #7c5cff;
+      --accent-soft: rgba(124, 92, 255, 0.15);
+      --green: #4ade80;
+      --orange: #fb923c;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      padding: 60px 20px 40px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #7c5cff, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    .last-updated {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 40px;
+      padding: 12px;
+      background: var(--accent-soft);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    section {
+      margin-bottom: 32px;
+      background: var(--surface);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 28px;
+      transition: border-color 0.3s;
+    }
+
+    section:hover {
+      border-color: var(--accent);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ccc;
+      margin: 16px 0 8px;
+    }
+
+    p, li {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, rgba(74, 222, 128, 0.1), rgba(74, 222, 128, 0.05));
+      border-color: rgba(74, 222, 128, 0.3);
+    }
+
+    .highlight h2 { color: var(--green); }
+
+    .scope-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+
+    .scope-table th {
+      text-align: left;
+      padding: 10px 12px;
+      background: rgba(124, 92, 255, 0.1);
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      font-weight: 600;
+    }
+
+    .scope-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    .scope-table tr:last-child td { border-bottom: none; }
+
+    .scope-table code {
+      background: rgba(124, 92, 255, 0.15);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      color: var(--accent);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .badge-green { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+    .badge-orange { background: rgba(251, 146, 60, 0.15); color: var(--orange); }
+
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .contact-card a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.5rem; }
+      section { padding: 20px; }
+      .scope-table { font-size: 0.8rem; }
+      .scope-table th, .scope-table td { padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-icon">🛡️</div>
+    <h1>Privacy Policy</h1>
+    <p>Super Google AI Assistant — Chrome Extension</p>
+  </div>
+
+  <div class="container">
+    <div class="last-updated">
+      📅 Last updated: March 14, 2026
+    </div>
+
+    <!-- 1. Introduction -->
+    <section>
+      <h2><span class="icon">👋</span> Introduction</h2>
+      <p>
+        Super Google AI Assistant ("the Extension") is a Chrome browser extension that provides AI-powered assistance 
+        for managing Google Workspace services including Google Sheets, Drive, Docs, Gmail, Calendar, YouTube, 
+        and Google Apps Script. This Privacy Policy explains how we collect, use, and protect your information.
+      </p>
+    </section>
+
+    <!-- 2. Data We Collect -->
+    <section>
+      <h2><span class="icon">📋</span> Information We Collect</h2>
+      
+      <h3>Data Stored Locally (on your device)</h3>
+      <ul>
+        <li>Google OAuth token (for API authentication)</li>
+        <li>API keys you provide (Gemini, Claude) — stored in Chrome's local storage</li>
+        <li>GitHub and Vercel tokens (if you connect them)</li>
+        <li>Selected AI model preference</li>
+        <li>Chat history cache</li>
+      </ul>
+
+      <h3>Data Stored in Your Google Account</h3>
+      <ul>
+        <li>Chat history — saved to a Google Sheet named "AI Assistant - Chat History" in <strong>your own</strong> Google Drive</li>
+        <li>Images from chat — uploaded to a folder named "AI Assistant Images" in <strong>your own</strong> Google Drive</li>
+        <li>Settings/preferences — stored in the Settings tab of the same Google Sheet</li>
+      </ul>
+
+      <h3>Data We Do NOT Collect</h3>
+      <ul>
+        <li>❌ We do NOT collect personal information on any external server</li>
+        <li>❌ We do NOT track your browsing activity</li>
+        <li>❌ We do NOT send your data to any third-party analytics service</li>
+        <li>❌ We do NOT store your Google password</li>
+      </ul>
+    </section>
+
+    <!-- 3. Key Highlight -->
+    <section class="highlight">
+      <h2><span class="icon">✅</span> Your Data Stays Yours</h2>
+      <p>
+        All data is stored either <strong>locally on your device</strong> (Chrome storage) or in <strong>your own Google Drive</strong>. 
+        We do not operate any backend server that collects or stores user data. The Extension communicates directly with Google APIs 
+        and AI providers using your own credentials.
+      </p>
+    </section>
+
+    <!-- 4. Google API Scopes -->
+    <section>
+      <h2><span class="icon">🔑</span> Google API Scopes & Permissions</h2>
+      <p>The Extension requests the following Google OAuth scopes to provide its features:</p>
+      
+      <table class="scope-table">
+        <thead>
+          <tr>
+            <th>Scope</th>
+            <th>Purpose</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>userinfo.email</code></td>
+            <td>Identify your Google account</td>
+            <td><span class="badge badge-green">Basic</span></td>
+          </tr>
+          <tr>
+            <td><code>userinfo.profile</code></td>
+            <td>Display your name and avatar</td>
+            <td><span class="badge badge-green">Basic</span></td>
+          </tr>
+          <tr>
+            <td><code>spreadsheets</code></td>
+            <td>Read/write Google Sheets data</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+          <tr>
+            <td><code>drive.file</code></td>
+            <td>Access files created by the extension or selected via file picker</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+          <tr>
+            <td><code>documents</code></td>
+            <td>Read/write Google Docs content</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+          <tr>
+            <td><code>gmail.readonly</code></td>
+            <td>Read email messages (no modification)</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+          <tr>
+            <td><code>gmail.send</code></td>
+            <td>Send emails on your behalf</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+          <tr>
+            <td><code>gmail.compose</code></td>
+            <td>Create and manage drafts</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+          <tr>
+            <td><code>calendar</code></td>
+            <td>Read/write Google Calendar events</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+          <tr>
+            <td><code>script.projects</code></td>
+            <td>Manage Google Apps Script projects</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+          <tr>
+            <td><code>youtube</code></td>
+            <td>Manage YouTube account and videos</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+          <tr>
+            <td><code>youtube.upload</code></td>
+            <td>Upload videos to YouTube</td>
+            <td><span class="badge badge-orange">Sensitive</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top: 16px; font-size: 0.85rem;">
+        ⚠️ All API calls are made <strong>directly from your browser</strong> to Google servers. 
+        No data passes through any intermediary server.
+      </p>
+    </section>
+
+    <!-- 5. Third-Party Services -->
+    <section>
+      <h2><span class="icon">🌐</span> Third-Party Services</h2>
+      <p>The Extension may interact with the following third-party services when you explicitly configure them:</p>
+      <ul>
+        <li><strong>Google Gemini API</strong> — for AI responses (requires your own API key)</li>
+        <li><strong>Anthropic Claude API</strong> — for alternative AI responses (requires your own API key)</li>
+        <li><strong>GitHub API</strong> — for code repository management (optional, requires your token)</li>
+        <li><strong>Vercel API</strong> — for deployment management (optional, requires your token)</li>
+      </ul>
+      <p style="margin-top: 12px;">
+        These services have their own privacy policies. We encourage you to review them. 
+        Your API keys and tokens are stored locally and never shared.
+      </p>
+    </section>
+
+    <!-- 6. Data Security -->
+    <section>
+      <h2><span class="icon">🔒</span> Data Security</h2>
+      <ul>
+        <li>All communication with Google APIs uses HTTPS encryption</li>
+        <li>OAuth tokens are managed by Chrome's built-in identity system</li>
+        <li>Sensitive keys (API keys, tokens) stored in Google Sheets are lightly obfuscated (Base64 encoding)</li>
+        <li>No data is transmitted to any server owned or operated by us</li>
+        <li>You can revoke access at any time via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener" style="color: var(--accent);">Google Account Permissions</a></li>
+      </ul>
+    </section>
+
+    <!-- 7. Data Deletion -->
+    <section>
+      <h2><span class="icon">🗑️</span> Data Deletion</h2>
+      <p>You can delete all data associated with this extension at any time:</p>
+      <ul>
+        <li><strong>Local data:</strong> Uninstall the extension from Chrome — all local storage is automatically deleted</li>
+        <li><strong>Google Drive data:</strong> Delete the "AI Assistant - Chat History" sheet and "AI Assistant Images" folder from your Google Drive</li>
+        <li><strong>Revoke access:</strong> Remove the extension from your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener" style="color: var(--accent);">Google Account Permissions</a></li>
+      </ul>
+    </section>
+
+    <!-- 8. Children -->
+    <section>
+      <h2><span class="icon">👶</span> Children's Privacy</h2>
+      <p>
+        This Extension is not intended for use by children under the age of 13. 
+        We do not knowingly collect any personal information from children.
+      </p>
+    </section>
+
+    <!-- 9. Changes -->
+    <section>
+      <h2><span class="icon">📝</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be reflected on this page 
+        with an updated "Last modified" date. Continued use of the Extension after changes constitutes 
+        acceptance of the updated policy.
+      </p>
+    </section>
+
+    <!-- 10. Contact -->
+    <section>
+      <h2><span class="icon">📧</span> Contact Us</h2>
+      <div class="contact-card">
+        <p>If you have questions about this Privacy Policy or the Extension, please contact us:</p>
+        <p>📧 Email: <a href="mailto:duc82122@gmail.com">duc82122@gmail.com</a></p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2026 Super Google AI Assistant. All rights reserved.
+  </footer>
+
+</body>
+</html>
